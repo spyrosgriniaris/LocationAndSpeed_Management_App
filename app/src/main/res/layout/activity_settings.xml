@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3">
+
+    <TextView
+        android:id="@+id/textGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Settings"
+        android:textColor="@android:color/background_dark"
+        android:textSize="34sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center|center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Point Of Interest Radius"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/radius_lbl"
+            android:textColor="@android:color/background_dark"/>
+
+        <Button
+            android:id="@+id/radius_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Choose radius"
+            android:textSize="25sp"
+            android:layout_below="@+id/radius_lbl"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center|center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Speed Limit"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/speed_limit_lbl"
+            android:textColor="@android:color/background_dark"/>
+
+        <Button
+            android:id="@+id/speed_limit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Choose Limit"
+            android:textSize="25sp"
+            android:layout_below="@+id/speed_limit_lbl"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center|center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Statistics Limit"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/statistics_lbl"
+            android:textColor="@android:color/background_dark"/>
+
+        <Button
+            android:id="@+id/statistics_limit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Choose Statistics Limit"
+            android:textSize="25sp"
+            android:layout_below="@+id/statistics_lbl"
+            android:layout_marginTop="16dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
